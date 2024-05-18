@@ -1,0 +1,194 @@
+## Version 계획
+
+v1
+
+- APP
+  - Flutter 학습
+
+- Frontend/Backend
+  - Backend 
+    - OAuth2.0 로그인 코드 구현
+    - 동작만 되는 1차적인 버전 완성이 목표
+  - Frontend
+    - 목업작업 + Backend 측 로그인 연동 작업
+    - Next.js + React? 
+
+v2
+
+- APP : 필요 기능들 학습
+- Frontend/Bakcend
+  - Backend
+    - 게시글 카테고라이징, 태깅 기능 개발
+    - DBMS 선정, 테이블/도큐먼트 설계
+  - Frontend
+    - CSS 목업 작업
+
+
+
+v3
+
+- APP 
+  - 기초적인  앱 베이스 구성
+  - 배포 절차 마련 
+- Frontend/Bakcend
+  - Backend
+    - Gateway, Discovery Server/Client 도입
+    - Config Server/Client 도입
+    - 클라우드 배포 준비작업
+  - Frontend
+    - CSS 목업 작업
+    - Zustand, Redux 기반 상태관리 코드 + 태깅/카테고리 기능 앱 구성
+
+
+
+v4
+
+- AWS 클라우드 인프라 구성
+- k8s 앱 구성 작업
+
+
+
+v5
+
+- 미정
+- APP 마켓 배포 예정
+
+
+
+
+
+
+
+## v1
+
+- APP
+- Frontend/Backend
+  - Backend 
+    - OAuth2.0 로그인 코드 구현
+    - 동작만 되는 1차적인 버전 완성이 목표
+  - Frontend
+    - 목업작업 + Backend 측 로그인 연동 작업
+    - Next.js + React? 
+
+
+
+### APP
+
+**Dart, Flutter**<br/>
+
+이번 프로젝트를 떠올렸을 때 Dart, Flutter 가 무슨 바로 해보면 바로 슉슉 적용되는 초딩레벨의 프레임워크인줄 착각했다. 그런데 적어도 2주 정도는 목차를 잘 보고 필요한 것만 학습을 해보는 시간을 가져야 할 것 같다.<br/>
+
+v1 에서는 학습하기로 결정<br/>
+
+
+
+### Frontend/Backend
+
+frontend, backend 은 v1 까지는 docker-compose 로 배포가 가능한 버전을 만드는게 목표다.<br/>
+
+**Spring Security OAuth 2.0**<br/>
+
+일단 로그인만 동작하도록 하는 간단한 코드를 작성해둘 예정.<br/>
+
+
+
+**React**<br/>
+
+CSS 목업작업 + 로그인 연동작업
+
+<br/>
+
+
+
+## v2
+
+- APP : 필요 기능들 학습
+- Frontend/Bakcend
+  - Backend
+    - 게시글 카테고라이징, 태깅 기능 개발
+    - DBMS 선정, 테이블/도큐먼트 설계
+  - Frontend
+    - CSS 목업 작업
+
+
+
+### APP
+
+일단 웹뷰(React)를 담을 껍데기인 앱 은 v2 에서도 스터디를 하기로. 어차피 웹/앱 모두 상용 도메인으로 열어둘 것이기에 웹만 먼저 열어두고 나중에 앱을 연결하면 되기에 APP 을 연동하는 것은 급하게 생각하지 않기로 했다.<br/>
+
+
+
+### Frontend/Backend
+
+**Spring Security WAS**<br/>
+
+OAuth 를 통해서 가져온 게시글 id 들을 카테고라이징하고 태그를 붙일수 있는 기능을 개발하는 과정이다. 시간을 넉넉하게 잡고 테이블 설계, DBMS 선정까지 차분하게 해야 한다. 지금 당장은 MySQL 을 생각 중이지만, MongoDB를 선택하게 될수도 있기에...<br/>
+
+
+
+**React**<br/>
+
+CSS 목업 작업
+
+
+
+## v3
+
+- APP 
+  - 기초적인  앱 베이스 구성
+  - 배포 절차 마련 
+- Frontend/Bakcend
+  - Backend
+    - Gateway, Discovery Server/Client 도입
+    - Config Server/Client 도입
+    - 클라우드 배포 준비작업
+  - Frontend
+    - CSS 목업 작업
+    - Zustand, Redux 기반 상태관리 코드 + 태깅/카테고리 기능 앱 구성
+
+
+
+### APP
+
+어느 정도의 기초적인 Flutter, Dart 기능들을 익힌 상태
+
+기초적인 앱 베이스를 만들어둘 예정.
+
+배포 구성 등을 학습해나가야 하는 과정.
+
+
+
+### Frontend/Backend
+
+**Spring Cloud Gateway, Discovery Server/Client**<br/>
+
+먼저 동작만 하는 Gateway, Discovery Server/Client 를 만들어둔 후 Gateway 에 Security WAS 프로젝트를 Gateway 에 안착시켜서 적용 예정이다.<br/>
+
+일단 v1 단계에서 이미 예제들을 만들어두고 있다.<br/>
+
+
+
+**React**
+
+- CSS, 목업 등을 구성
+
+- 리덕스 또는 Zustand 를 통한 상태관리 코드 작성
+
+
+
+## v4
+
+AWS 클라우드 인프라 구성
+
+
+
+
+
+## v5
+
+### APP
+
+마켓 배포 해보기
+
+
+
