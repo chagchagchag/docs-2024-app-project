@@ -1,0 +1,12 @@
+사실 Discovery Server, Config Server 와 같은 개념은 Kubernetes 레벨에서 제공해줍니다. 그런데 이렇게 Kubernetes 레벨에서 적용을 하면 애플리케이션이 인프라에 종속적으로 되어서 기능 수정을 해야 하거나 애플리케이션의 특정 Property 들을 수정해야 할 때 인프라 (K8S 리소스) 를 수정해야 하는 상황이 발생합니다.<br/> 
+
+이런 이유로 인해 Pivotal 에서는 Spring Cloud Kubernetes 를 출시했습니다.<br/>
+Discovery Server, Config Server 를 Spring Cloud Kubernetes 에서 애플리케이션 레벨에서 구현한다면, 인프라(EKS) 레벨과 애플리케이션(Spring) 레벨의 변경사항이 스파게티 처럼 얽히는 일은 줄어들 것 입니다.<br/>
+
+이번 프로젝트에서는 Spring Cloud Kubernetes 을 사용해서 프로젝트를 진행합니다. 이번 프로젝트에서 Spring Cloud Kubernetes 를 사용해야 겠다고 생각한 실제 목적은 아래와 같습니다.
+- 그냥 실제로 동작하는 예제를 만들어두기 위해서
+<br/>
+
+Spring Cloud Kubernetes 에서 제공하는 Config Server, Discovery Server, Gateway 기능을 제공하는데, 이 기능들을 하나씩 구현하면서 어떻게 했는지 등을 별도의 프로젝트 문서 페이지에 작성하고 운영합니다.<br/>
+
+초기 개발 버전은 Spring Security 기반의 싱글인스턴스에서 단순하게 로컬 서버 개발로 시작해서 Spring Cloud 기반으로 천천히 전환을 해나갈 예정입니다.
