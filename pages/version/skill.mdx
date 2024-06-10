@@ -1,0 +1,46 @@
+
+
+
+## Backend
+- Spring Boot 3.x
+- Spring Security 
+- Spring Cloud Gateway
+- Kotlin
+- grpc 
+- Webflux, R2dbc, Coroutine
+- MySQL, Redis
+- GraphQL
+- Mustache
+
+<br/>
+
+메시지 큐로 grpc 를 선택하게 된 것은 비용 문제로 인해... 또르르...<br/>
+
+백엔드 언어로 Java 를 선택할지, Kotlin 을 선택할지 정말 고민을 많이 했는데, `@RequiredArgsConstructor` 를 너무 게으르게 막 쓰고 있는 저 자신을 보면서 개인 플젝은 Kotlin 으로 해야겠다 하고 생각했습니다.<br/>
+
+별다른 이유 없어요!! 그냥 kotlin 이 최애 언어이기도 해서ㅋㅋㅋ<br/>
+<br/>
+
+## Frontend
+- React 
+- OAuth2 Client 
+
+이것 저것 공식문서를 읽어보다보니 Front, Back 분리했을 때 로그인 요청하는 것은 OAuth2 Client 가 React 가 되는게 맞았었다는걸 이제야 알게되었네요. 스프링 시큐리티로는 Resource Server 를 구현할 듯 하네요.
+
+
+## App 
+- Dart, Flutter
+
+성격상 CSS 나 색상에 대한 감각이 없기에 메뉴 만들때 허접해보이는 CSS 가 나올수 있다고 판단해서 Material Template 으로 미리 제공되는 디자인 슈트를 사용할 수 있는 Dart, Flutter 를 선택했슴다. 서버 개발자 취향이 항상 이런건지 모르겠지만 저 역시도... 전체 네이티브로 구현하기 보다는 Flutter 로는 껍데기와 GNB 등 메뉴만 만들고 나머지 모든 처리를 웹뷰로 할 생각입니다.<br/>
+<br/>
+
+인증처리시 인증정보를 Flutter 와 웹뷰 사이에 공유해야 하는 방법이 귀찮을 듯 한데 어떻게 잘 찾아보고 만들어보려고 생각중입니다\~
+
+
+## 인프라 고도화
+
+인프라 고도화 시에는 Gateway Server 를 Spring Cloud Kubernetes 기반으로 마이그레이션 해서 k8s 클러스터에 안착시킬 예정입니다. EKS 비용이 후덜덜 하긴 하지만, 1달 정도는 한번 EKS 클러스터에 운영해보고 싶다는 생각이 있습니다.<br/>
+<br/>
+
+
+
